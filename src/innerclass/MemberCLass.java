@@ -5,7 +5,7 @@ public class MemberCLass {
     public class InnerMenberClas {
         private int id;
 
-        public void In(){
+        public void In() {
             System.out.println("Hello");
         }
     }
