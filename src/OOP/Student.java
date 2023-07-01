@@ -1,5 +1,7 @@
 package OOP;
 
+import java.util.Objects;
+
 public class Student {
     private String id;
     private String name;
@@ -33,5 +35,16 @@ public class Student {
             }
             }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = Integer.parseInt(prime * result + id);
+
+
+
+        return result;
     }
 }
