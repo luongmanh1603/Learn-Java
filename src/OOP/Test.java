@@ -24,6 +24,11 @@ public class Test {
         System.out.println("search id=3 :"+ liststudent.contains(st2));
         System.out.println("hashcode 1: "+ s1.hashCode());
         System.out.println("hashcode 2: " + s2.hashCode());
+        //mydate
+        MyDate md = new MyDate(16,03,2004);
+        md.setDay(100);
+        System.out.println("Day = "+ md.getDay());
+
 
 
     }
