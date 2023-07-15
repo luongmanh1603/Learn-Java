@@ -1,7 +1,13 @@
 package OOP;
 
+import java.util.Objects;
+
 public class MyDate {
        private int day, month, year;
+
+    public MyDate(int year) {
+        this.year = year;
+    }
 
     public MyDate(int day, int month, int year) {
         if (day >= 1 && day <= 31) {
@@ -54,6 +60,19 @@ public class MyDate {
                 ", month=" + month +
                 ", year=" + year +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof MyDate)) return false;
+        MyDate myDate = (MyDate) o;
+        return day == myDate.day && month == myDate.month && year == myDate.year;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash( year);
     }
 }
 
