@@ -28,6 +28,7 @@ public class Test {
         MyDate md = new MyDate(16,03,2004);
         md.setDay(100);
         System.out.println("Day = "+ md.getDay());
+        System.out.println(md.toString());
 
 
 
