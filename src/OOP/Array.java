@@ -8,9 +8,11 @@ public class Array {
 
         mang1 = new double[10];
         Scanner sc = new Scanner(System.in);
-        for (int i = 1; i<mang1.length;i++){
+        for (int i = 1; i< mang1.length;i++){
+            mang1[i] = 0;
+        }
+        for (double i : mang1){
             System.out.println("Nhap ten"+i+":");
-            mang1[i] = sc.nextDouble();
 
         }
         double tong=0;
