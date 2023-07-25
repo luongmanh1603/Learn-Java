@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Viduvechuoi {
     public static void main(String[] args) {
-        String chuoi;
-        char k;
+    String chuoi;
+    char k;
         int dodai;
         int count = 0;
-        Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Nhap chuoi:");
             chuoi = sc.nextLine();
@@ -22,5 +22,27 @@ public class Viduvechuoi {
             }
 
         }
-        System.out.println(count);}
+        System.out.println(count);
+        // kiem tra so ky tu in hoa, in thuong, so
+        String chuoi1;
+        int hoa = 0, thuong = 0, so = 0;
+        do {
+            System.out.println("Nhap chuoi can kiem tra:");
+            chuoi1 = sc.nextLine();
+        } while (chuoi1.length() > 100);
+        for (int j = 0; j < chuoi1.length();j++){
+            if (Character.isUpperCase(chuoi1.charAt(j))){
+                hoa++;
+
+            } else if (Character.isLowerCase(chuoi1.charAt(j))) {
+                thuong++;
+            } else if (Character.isDigit(chuoi1.charAt(j))){
+                so++;
+            }
+        }
+
+        System.out.println("Thuong:"+thuong + ",Hoa" + hoa + ",So"+so);
+
+        }
+
 }
