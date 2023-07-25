@@ -1,5 +1,7 @@
 package ChuoivaMang;
 
+import java.util.Scanner;
+
 public class Chuoitrongjava {
 
 
@@ -10,5 +12,16 @@ public class Chuoitrongjava {
 
         String nameP = "quan";
         System.out.println(nameP);
+        //do dai chuoi
+        String address;
+        int dodai;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Dia chi: ");
+        address = sc.nextLine();
+
+        dodai = address.length();
+        System.out.println(dodai);
+
+
     }
 }
